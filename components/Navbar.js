@@ -18,17 +18,17 @@ export const Navbar = () => {
       <nav className='flex items-center flex-wrap p-3 Navbar'>
 	{router.asPath === "/" ? 
           <p className='cursor-pointer inline-flex items-center p-2 mr-4 hover:no-underline'>
-            <img src='/images/logo.png' alt='Ethernal-Logo' className='fill-current text-white h-8 w-8 mr-2' />
+            <img src='/images/logo.jpg' alt='Ethernal-Logo' className='fill-current text-white h-8 w-8 mr-2' />
             <span className='text-xl text-white font-bold MainColor uppercase tracking-wide no-underline'>
-              ServerJars
+            Minecraft Jars
             </span>
           </p>
 	 :
 	<Link href='/' shallow className='no-underline'> 
 	  <a className='inline-flex items-center p-2 mr-4 hover:no-underline'>
-            <img src='/images/logo.png' alt='Ethernal-Logo' className='fill-current text-white h-8 w-8 mr-2' />
+            <img src='/images/logo.jpg' alt='Ethernal-Logo' className='fill-current text-white h-8 w-8 mr-2' />
             <span className='text-xl text-white font-bold MainColor uppercase tracking-wide no-underline'>
-              ServerJars
+            Minecraft Jars
             </span>
           </a>
 	</Link>

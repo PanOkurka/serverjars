@@ -14,7 +14,7 @@ const options = {
   type: 'success',
 }
 
-export const siteTitle = 'ServerJars'
+export const siteTitle = 'Minecraft Jars'
 
 export default function Layout({ children }) {
   const { asPath } = useRouter();
@@ -22,14 +22,14 @@ export default function Layout({ children }) {
     <AlertProvider template={AlertTemplate} {...options}>
       <div className={styles.container}>
         <Head>
-          <link rel="icon" href="/images/logo.png" />
+          <link rel="icon" href="/images/logo.jpg" />
           <meta
             name="description"
-            content="ServerJars website!"
+            content="Minecraft Jars website!"
           />
           <meta name="og:title" content={siteTitle} />
           <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-          <title>ServerJars</title>
+          <title>Minecraft Jars</title>
         </Head>
         <Navbar/>
         <main>{children}</main>

@@ -24,8 +24,8 @@ export default function App({ Component, pageProps, router }) {
         ) : (
           <>
               <Head>
-                <link rel="icon" href="/images/logo.png" />
-                <title>ServerJars</title>
+                <link rel="icon" href="/images/logo.jpg" />
+                <title>Minecraft Jars</title>
               </Head>
 
               <div className='Loader'>
