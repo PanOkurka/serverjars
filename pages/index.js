@@ -20,7 +20,7 @@ export default function Home() {
                     <a className='item'>
                         <Image src="/images/servers.png" width='150px' height='150px' />
                         <h1>Servers</h1>
-                        <p>Server fork's of Bukkit</p>
+                        <p>Server fork&apos;s of Bukkit</p>
                     </a>
                 </Link>
                 <Link id='proxy' href='/proxy'>
