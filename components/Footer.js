@@ -15,7 +15,7 @@ function Footer() {
                     <h3 className='text-lg'>&copy; {new Date().getFullYear()} YourDomain.com</h3>
                         <p className='infos mt-4'> 
                             Made with &hearts; by Pan_Okurka
-                            <span className='center'><FaCodeBranch/> prod-1.0.0</span>
+                            <span className='center'><FaCodeBranch/> prod-1.0.1</span>
                         </p>
                 </div>
                 <div className="Map">
