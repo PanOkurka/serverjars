@@ -5,6 +5,21 @@ import Link from 'next/link'
 
 export default function Home() {
 
+ function DropdwnOpen(){
+    if(document.getElementById("dropdown-menu").classList.contains("hidden")){
+        document.getElementById("dropdown-menu").classList.remove("hidden")
+    } else {
+        document.getElementById("dropdown-menu").classList.add("hidden");
+    }
+ }
+ function DropdwnOpen2(){
+    if(document.getElementById("dropdown-menu2").classList.contains("hidden")){
+        document.getElementById("dropdown-menu2").classList.remove("hidden")
+    } else {
+        document.getElementById("dropdown-menu2").classList.add("hidden");
+    }
+ }
+
   return (
     <Layout>
        <motion.div exit={{ y: -60, opacity: 0, transition: {duration: 0.6}}} initial={{ y: 60 , opacity: 0}} animate={{ y: 0 , opacity: 1, transition: {duration: 1}}}>
@@ -45,37 +60,44 @@ export default function Home() {
                           <p>1.18.2 (stable)</p>
                           <a href='https://serverjars.com/api/fetchJar/modded/forge/1.18.2' download>Download</a>
                       </div>
-                      <div className='version'>
-                          <p>1.10 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.10' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.9.4 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.9.4' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.9 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.9' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.8.9 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.8.9' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.8.8 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.8.8' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.8 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.8' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.7.10 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.7.10' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.6.4 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/forge/1.6.4' download>Download</a>
+                      <div>
+                            <button id='dropdwn' onClick={DropdwnOpen} type="button" className='drpdwn-btn'>
+                                <span>More</span>
+                            </button>
+                            <div id='dropdown-menu' className='hidden Animation'>
+                                <div className='version'>
+                                    <p>1.10 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.10' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.9.4 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.9.4' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.9 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.9' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.8.9 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.8.9' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.8.8 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.8.8' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.8 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.8' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.7.10 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.7.10' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.6.4 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/forge/1.6.4' download>Download</a>
+                                </div>
+                            </div>
                       </div>
                   </div>
                 </div>
@@ -111,45 +133,52 @@ export default function Home() {
                           <p>1.18.1 (stable)</p>
                           <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.18.1' download>Download</a>
                       </div>
-                      <div className='version'>
-                          <p>1.18 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.18' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.17 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.17' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.16.4 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.4' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.16.3 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.3' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.16.2 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.2' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.16.1 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.1' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.16 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.15.1 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.15.1' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.15 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.15' download>Download</a>
-                      </div>
-                      <div className='version'>
-                          <p>1.14.3 (stable)</p>
-                          <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.14.3' download>Download</a>
+                      <div>
+                            <button id='dropdwn' onClick={DropdwnOpen2} type="button" className='drpdwn-btn'>
+                                <span>More</span>
+                            </button>
+                            <div id='dropdown-menu2' className='hidden Animation'>
+                                <div className='version'>
+                                    <p>1.18 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.18' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.17 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.17' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.16.4 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.4' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.16.3 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.3' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.16.2 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.2' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.16.1 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16.1' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.16 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.16' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.15.1 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.15.1' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.15 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.15' download>Download</a>
+                                </div>
+                                <div className='version'>
+                                    <p>1.14.3 (stable)</p>
+                                    <a href='https://serverjars.com/api/fetchJar/modded/fabric/1.14.3' download>Download</a>
+                                </div>
+                            </div>
                       </div>
                   </div>
                 </div>

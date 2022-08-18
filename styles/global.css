@@ -116,6 +116,7 @@ img {
   align-items: flex-start;
   padding-bottom: 10vh;
   align-content: center;
+  transition: 400ms;
 }
 
 .downloads{
@@ -133,6 +134,7 @@ img {
     text-align: center;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  transition: 400ms;
 }
 
 .downloads h2{
@@ -149,12 +151,14 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  transition: 400ms;
 }
 
 .version{
   margin-bottom: 1vh;
   padding-bottom: 2.5vh;
   border-bottom: 1px solid gray;
+  transition: 400ms;
 }
 
 .version p{
@@ -740,4 +744,37 @@ input[type=text] {
 .content span{
   width: 100%;
   height: 100%;
+}
+
+.drpdwn-btn{
+  margin-top: 1vh;
+  transition: 400ms;
+  margin-bottom: 2vh;
+}
+
+.drpdwn-btn span{
+  background: var(--background-main);
+  padding: 1.2vh 18vh;
+  border-radius: 10px;
+}
+
+.drpdwn-btn:hover {
+  transform: scale(1.06);
+}
+
+.Animation {
+  animation: growOut 500ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+@keyframes growOut {
+  0% {
+     transform: scale(0)
+ }
+ 80% {
+     transform: scale(1.1)
+ }
+ 100% {
+     transform: scale(1)
+ }
 }
