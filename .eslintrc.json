@@ -1,0 +1,9 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-useless-computed-key": "off",
+    "no-reserved-keys": "off",
+    "react/jsx-key": "off",
+    "@next/next/no-img-element": "off"
+  }
+}
