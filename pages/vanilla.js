@@ -13,16 +13,16 @@ export default function Home() {
                   <h2>Snapshot</h2>
                   <div className='stuff'>
                     <div className='version'>
-                          <p>1.19.2-rc2 (Experimental)</p>
-                          <a href='https://serverjars.com/api/fetchJar/vanilla/snapshot/1.19.2-rc2' download>Download</a>
+                          <p>22w46a  (Experimental)</p>
+                          <a href='https://serverjars.com/api/fetchJar/vanilla/snapshot/22w46a' download>Download</a>
                       </div>
                       <div className='version'>
-                          <p>1.19.2-rc1 (Experimental)</p>
-                          <a href='https://serverjars.com/api/fetchJar/vanilla/snapshot/1.19.2-rc1' download>Download</a>
+                          <p>22w45a (Experimental)</p>
+                          <a href='https://serverjars.com/api/fetchJar/vanilla/snapshot/22w45a' download>Download</a>
                       </div>
                       <div className='version'>
-                          <p>1.19.1-rc3 (Experimental)</p>
-                          <a href='https://serverjars.com/api/fetchJar/vanilla/snapshot/1.19.1-rc3' download>Download</a>
+                          <p>22w44a (Experimental)</p>
+                          <a href='https://serverjars.com/api/fetchJar/vanilla/snapshot/22w44a' download>Download</a>
                       </div>
                   </div>
                 </div>

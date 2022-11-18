@@ -27,6 +27,10 @@ export default function Home() {
                 <div className='downloads'>
                   <h2>Mohist</h2>
                   <div className='stuff'>
+                        <div className='version'>
+                          <p>1.19.2 (stable)</p>
+                          <a href='https://serverjars.com/api/fetchJar/modded/mohist/1.19.2' download>Download</a>
+                      </div>
                       <div className='version'>
                           <p>1.18.2 (testing)</p>
                           <a href='https://serverjars.com/api/fetchJar/modded/mohist/1.18.2' download>Download</a>
