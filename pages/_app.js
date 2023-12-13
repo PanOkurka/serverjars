@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion'
 import HashLoader from 'react-spinners/HashLoader';
 import Head from 'next/head';
 import React from 'react';
+import { NextUIProvider } from '@nextui-org/react';
 
 export default function App({ Component, pageProps, router }) {
   const [loading, setLoading] = React.useState(true);
@@ -18,9 +19,11 @@ export default function App({ Component, pageProps, router }) {
     return (
       <>
         {!loading ? (
-          <AnimatePresence exitBeforeEnter>
-            <Component {...pageProps} key={router.route} />
-          </AnimatePresence>
+          <NextUIProvider>
+            <AnimatePresence mode='wait'>
+              <Component {...pageProps} key={router.route} />
+            </AnimatePresence>
+          </NextUIProvider>
         ) : (
           <>
               <Head>

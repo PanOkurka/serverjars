@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Footer from './Footer'
-import styles from './layout.module.css'
 import { Navbar } from './Navbar'
 import AlertTemplate from 'react-alert-template-basic'
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
@@ -20,7 +19,7 @@ export default function Layout({ children }) {
   const { asPath } = useRouter();
   return (
     <AlertProvider template={AlertTemplate} {...options}>
-      <div className={styles.container}>
+      <div className="w-screen">
         <Head>
           <link rel="icon" href="/images/logo.jpg" />
           <meta
