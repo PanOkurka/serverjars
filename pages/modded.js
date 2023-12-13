@@ -29,7 +29,7 @@ export default function Modded() {
       .then(({data}) => setCatserver(data.response))
 
     setDoRequest(true)
-  }, [])
+  }, [doRequest])
 
   const download = (category,version) => {
     window.location = `https://serverjars.com/api/fetchJar/modded/${category}/${version}`

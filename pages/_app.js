@@ -11,7 +11,7 @@ export default function App({ Component, pageProps, router }) {
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
 
 

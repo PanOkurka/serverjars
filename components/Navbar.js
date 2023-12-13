@@ -24,7 +24,7 @@ export const Navbar = () => {
             </span>
           </p>
 	 :
-	<Link href='/' shallow className='no-underline inline-flex items-center p-2 mr-4 hover:no-underline'> 
+	<Link href='/' passHref shallow className='no-underline inline-flex items-center p-2 mr-4 hover:no-underline'> 
             <img src='/images/logo.jpg' alt='Ethernal-Logo' className='fill-current text-white h-8 w-8 mr-2' />
             <span className='text-xl text-white font-bold MainColor uppercase tracking-wide no-underline'>
             Minecraft Jars
