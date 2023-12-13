@@ -27,7 +27,7 @@ export default function Servers() {
       .then(({data}) => setSponge(data.response))
 
     setDoRequest(true)
-  }, [])
+  }, [doRequest])
 
   const download = (category,version) => {
     window.location = `https://serverjars.com/api/fetchJar/servers/${category}/${version}`
